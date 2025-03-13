@@ -44,11 +44,3 @@ python virtual_painter.py
 - NumPy
 - MediaPipe
 
-## Future Improvements
-- Adding more brush styles and sizes.
-- Implementing shape drawing (circles, rectangles, etc.).
-- Saving the drawings as images.
-
-## License
-This project is open-source and free to use for educational purposes.
-
