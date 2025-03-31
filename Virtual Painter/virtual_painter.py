@@ -51,16 +51,16 @@ while True:
     # Selection Mode: Both index & middle fingers up
         if fingers[1] == 1 and fingers[2] == 1 and abs(x2 - x1) <= 50:
             xp,yp=0,0
-            print("Selection mode")
+            # print("Selection mode")
             # print(lmList[8][1:])
             
             if y1 < 125:
                 if 250 < x1 < 450:
                     header = overlayList[0]
-                    drawColor = (255, 0, 255)
+                    drawColor = (0, 0, 255)
                 elif 550 < x1 < 750:
                     header = overlayList[1]
-                    drawColor = (255, 0, 0)
+                    drawColor = (139, 0, 0) 
                 elif 800 < x1 < 950:
                     header = overlayList[2]
                     drawColor = (0, 255, 0)
@@ -73,7 +73,7 @@ while True:
         if fingers[1] == 1 and fingers[2] == 0:
             cv2.circle(img, (x1, y1), 10, drawColor , cv2.FILLED)
             
-            print("Drawing mode")
+            # print("Drawing mode")
             # print(x1,x2,y1,y2)
                 
             if xp==0 and yp ==0:
